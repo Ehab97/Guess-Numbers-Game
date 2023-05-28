@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import PrimaryButton from "../ui/Button";
 import Card from "../ui/Card";
 import InstrucionText from "./InstrucionText";
+import { Ionicons } from "@expo/vector-icons";
 
 function HigherOrLower({ handleClick }) {
   return (
@@ -10,10 +11,10 @@ function HigherOrLower({ handleClick }) {
       <InstrucionText text={`Higher or Lower ?`} style={styles.instrucionText} />
       <View style={styles.buttonContainer}>
         <PrimaryButton style={styles.button} onPress={handleClick.bind(this, "lower")}>
-          -
+          <Ionicons name="md-remove" size={24} color={`white`} />
         </PrimaryButton>
         <PrimaryButton style={styles.button} onPress={handleClick.bind(this, "higher")}>
-          +
+          <Ionicons name="md-add" size={24} color={`white`} />
         </PrimaryButton>
       </View>
     </Card>
