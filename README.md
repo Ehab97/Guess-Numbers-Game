@@ -12,4 +12,6 @@ A simple React Native app that allows users to guess a randomly generated number
 
 ![Screenshot at May 27 21-26-08](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/40c676c5-a165-468e-833e-b886d88f3234)
 
+![Screenshot at May 30 01-20-21](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/37907226-a881-4b25-ab62-0d25d8e27ac6)
+
 ![Screenshot at May 29 23-19-36](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/6647e416-4ba1-4ad0-b5d3-fabef23e89c1)
