@@ -7,7 +7,7 @@ import HigherOrLower from "../components/game/HigherOrLower";
 
 let minBoundary = 1;
 let maxBoundary = 100;
-function GameScreen({ userChoice, gameOverHandler }) {
+function GameScreen({ userChoice, gameOverHandler, setGuessRounds }) {
   const intialGuess = generateRandomBetween(1, 100, userChoice);
   const [currentGuess, setCurrentGuess] = React.useState(intialGuess);
   const nextGuessHandler = (direction) => {
@@ -20,7 +20,7 @@ function GameScreen({ userChoice, gameOverHandler }) {
       ]);
       return;
     }
-
+    setGuessRounds((currentGuess) => currentGuess + 1);
     if (direction === "lower") {
       maxBoundary = currentGuess;
     } else {
@@ -35,6 +35,11 @@ function GameScreen({ userChoice, gameOverHandler }) {
       gameOverHandler();
     }
   }, [currentGuess, userChoice, gameOverHandler]);
+
+  React.useEffect(() => {
+      minBoundary=1;
+      maxBoundary=100;
+  },[]);
 
   return (
     <View style={styles.screen}>
