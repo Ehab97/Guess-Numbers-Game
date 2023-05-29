@@ -25,6 +25,7 @@ function GameOverScreen({
       >
         NEW GAME
       </PrimaryButton>
+      
     </View>
   );
 }
