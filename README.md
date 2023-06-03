@@ -8,10 +8,6 @@ A simple React Native app that allows users to guess a randomly generated number
 2. Install the dependencies:
 3. expo start or npx expo start
 
-![Screenshot at May 27 21-30-27](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/238cf1ff-85f1-4506-96c0-8a94249051e5)
-
-![Screenshot at May 27 21-26-08](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/40c676c5-a165-468e-833e-b886d88f3234)
-
-![Screenshot at May 30 01-20-21](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/37907226-a881-4b25-ab62-0d25d8e27ac6)
-
-![Screenshot at May 29 23-19-36](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/6647e416-4ba1-4ad0-b5d3-fabef23e89c1)
+![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-03 at 15 51 11](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/96400043-135d-4d40-a2d1-7753134ce01b)
+![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-03 at 15 51 29](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/3ce1868a-61a3-4e7a-b15e-57ebb5dc42e5)
+![Simulator Screen Shot - iPhone 12 Pro Max - 2023-06-03 at 15 51 41](https://github.com/Ehab97/Guess-Numbers-Game/assets/28493731/6f1d1c5d-7dbc-44e8-9903-210b858ea513)
