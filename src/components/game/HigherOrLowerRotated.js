@@ -1,13 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet, Dimensions } from "react-native";
+import { View, StyleSheet } from "react-native";
 import PrimaryButton from "../ui/Button";
 import Card from "../ui/Card";
-import InstrucionText from "./InstrucionText";
 import { Ionicons } from "@expo/vector-icons";
 import NumberContainer from "./NumberContainer";
 
-function HigherOrLowerRotated({ handleClick,cureentGuess }) {
-  return ( 
+function HigherOrLowerRotated({ handleClick, cureentGuess }) {
+  return (
     <Card>
       <View style={styles.buttonContainer}>
         <PrimaryButton style={styles.button} onPress={handleClick.bind(this, "lower")}>
@@ -21,8 +20,6 @@ function HigherOrLowerRotated({ handleClick,cureentGuess }) {
     </Card>
   );
 }
-
-
 
 const styles = StyleSheet.create({
   container: {},

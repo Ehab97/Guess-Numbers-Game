@@ -6,20 +6,16 @@ import { useState } from "react";
 import GameScreen from "./src/screens/GameScreen";
 import { Colors } from "./src/helper/constants";
 import GameOverScreen from "./src/screens/GameOverScreen";
-// import { useFonts } from "expo-font";
-// import AppLoading from "expo-app-loading";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
+import { StatusBar } from "expo-status-bar";
+
 export default function App() {
   const [userNumber, setUserNumber] = useState(null);
   const [isGameOver, setIsGameOver] = useState(true);
   const [appIsReady, setAppIsReady] = useState(false);
   const [guessRounds, setGuessRounds] = useState(0);
-  // const [fontsLoaded] = useFonts({
-  //   "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
-  //   "open-sans-bold": require("./assets/fonts/OpenSans-Bold.ttf"),
-  // });
-  // if (!fontsLoaded) return <AppLoading />;
+
 
   React.useEffect(() => {
     async function prepare() {
@@ -43,11 +39,7 @@ export default function App() {
 
   const onLayoutRootView = React.useCallback(async () => {
     if (appIsReady) {
-      // This tells the splash screen to hide immediately! If we call this after
-      // `setAppIsReady`, then we may see a blank screen while the app is
-      // loading its initial state and rendering its first pixels. So instead,
-      // we hide the splash screen once we know the root view has already
-      // performed layout.
+
       await SplashScreen.hideAsync();
     }
   }, [appIsReady]);

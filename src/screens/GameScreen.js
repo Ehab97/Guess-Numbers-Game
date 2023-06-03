@@ -57,7 +57,7 @@ function GameScreen({ userChoice, gameOverHandler, setGuessRounds }) {
   if (width > 500) {
     content = (
       <>
-        <HigherOrLowerRotated handleClick={nextGuessHandler} cureentGuess={currentGuess} /> 
+        <HigherOrLowerRotated handleClick={nextGuessHandler} cureentGuess={currentGuess} />
       </>
     );
   }
