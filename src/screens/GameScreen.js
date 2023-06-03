@@ -51,12 +51,12 @@ function GameScreen({ userChoice, gameOverHandler, setGuessRounds }) {
       <Title title="Oppents's Guess" />
       <NumberContainer>{currentGuess}</NumberContainer>
       <HigherOrLower handleClick={nextGuessHandler} />
-
       <View style={styles.listContainer}>
         <FlatList
           data={guessRoundsNumbers}
           renderItem={(itemData) => (
-            <GuessLogItem roundNumber={guessRoundsListLength - itemData.index} guess={itemData.item} />
+            <GuessLogItem roundNumber={guessRoundsListLength - itemData.index} 
+            guess={itemData.item} />
           )}
           keyExtractor={(item) => item}
         />
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 12,
-    // alignItems: 'center'
+    alignItems: 'center'
   },
   listContainer: {
     flex: 1,

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Dimensions } from "react-native";
 import PrimaryButton from "../ui/Button";
 import Card from "../ui/Card";
 import InstrucionText from "./InstrucionText";
@@ -20,6 +20,8 @@ function HigherOrLower({ handleClick }) {
     </Card>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {},
